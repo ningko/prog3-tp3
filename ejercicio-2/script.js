@@ -10,6 +10,9 @@ formulario.addEventListener("submit", (e) => {
 
 const filtrado = () => {
     const texto = palabra.value.toLowerCase()
+
+    if (texto === "") return
+
     ul.innerHTML = ""
 
     const filtrados = animales.filter(animal => animal.toLowerCase().includes(texto))
@@ -20,5 +23,4 @@ const filtrado = () => {
     })
 }
 
-//palabra.addEventListener("input", filtrado)
 filtrar.addEventListener("click", filtrado)
