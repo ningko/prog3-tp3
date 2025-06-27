@@ -5,7 +5,6 @@ function App() {
   const [b, setB] = useState(0)
   const [operacion, setOperacion] = useState("")
   const [resultado, setResultado] = useState(null)
-  const [calcular, setCalcular] = useState(false)
   const [disabled, setDisabled] = useState(false)
 
   useEffect(() => {
